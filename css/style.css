@@ -1,0 +1,183 @@
+
+.carousel, .carousel-inner, .carousel-item, .carousel-item img  {
+    height: 55rem;
+}
+
+.grid {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 0 5%;
+}
+
+
+.col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 30rem;
+}
+
+
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.row img {
+    width: 50%;
+    max-height: 90%;
+}
+
+
+.texto {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto h2 {
+    font-size: 4rem;
+    margin-bottom: 4%;
+}
+
+.texto h3 {
+    width: 80%;
+}
+
+.text-hardware {
+    width: 50%;
+    padding: 0 4rem;
+    font-weight: 400;
+
+}
+
+.titulo {
+    font-size: 5rem;
+    margin: 1rem 0;
+}
+
+.vid {
+    width: 40%;
+    height: 40rem;
+    aspect-ratio: 16/9;
+}
+
+.faq {
+    width: 90%;
+}
+
+.card{
+    width: 30rem;
+}
+
+.card img {
+    display: flex;
+    align-self: center;
+    padding: 5% 0;
+    width: 90%;
+    border-radius: 20px;
+}
+
+.grid img {
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+.carousel-item img {
+    aspect-ratio: 16/9;
+}
+
+
+
+@media (width<=1024px) {
+
+    /*tablet*/
+    .carousel, .carousel-inner, .carousel-item, .carousel-item img  {
+        height: 40rem;
+    }
+
+
+    .titulo {
+        font-size: 3rem;
+    }
+
+    .card {
+        margin-bottom: 5%;
+    }
+
+    .texto {
+        width: 80%;
+        padding-bottom: 5%;
+    }
+
+    .grid {
+        width: 70%;
+    }
+
+    .text-hardware {
+        width: 80%;
+        padding-top: 5%;
+    }
+
+    .accordion-header {
+        font-size: 4rem;
+    }
+
+    h5 {
+        font-size: 2rem;
+    }
+
+    a,
+    p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (width<=667px) {
+/* Mobile */
+
+.carousel, .carousel-inner, .carousel-item, .carousel-item img  {
+    height: 20rem;
+}
+    .row img{
+        width: 60%;
+    }
+
+    .texto h3,.text-hardware{
+        width: 80%;
+        padding: 2rem 0;
+    }
+
+    .titulo, .texto h2{
+        font-size: 2rem;
+    }
+
+    .card{
+        width: 20rem;
+    }
+
+    .card img{
+        width: 80%;
+    }
+
+    h5{
+        font-size: 1.5rem;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+
+    .grid img{
+        width: 100%;
+    }
+}
